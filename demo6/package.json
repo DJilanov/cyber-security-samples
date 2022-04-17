@@ -1,0 +1,21 @@
+{
+    "name": "remote-code-execution",
+    "version": "2.0.0",
+    "description": "",
+    "main": "server.js",
+    "dependencies": {
+      "express": "4.16.2",
+      "express-session": "1.15.6",
+      "serve-static": "1.13.1",
+      "cookie-parser": "1.4.6",
+      "escape-html": "1.0.3",
+      "node-serialize": "0.0.2"
+    },
+    "devDependencies": {},
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "MIT"
+  }
+  
