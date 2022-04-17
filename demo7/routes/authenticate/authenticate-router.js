@@ -6,8 +6,7 @@ const attachTo = (app, repository, passport) => {
 	const controller = require('./authenticate-controller')(repository);
 
 	router
-		.post('/login/admin/', validator.verifyLoginRequest, controller.loginAdmin)
-		.post('/login/technic/', validator.verifyLoginRequest, controller.loginTechnic)
+		.post('/login/', validator.verifyLoginRequest, controller.loginAdmin)
 		.get('/user/', passport.authenticate('jwt', { session: false }), controller.getUser)
 		.get('/logout/', passport.authenticate('jwt', { session: false }), controller.logoutUser)
 
